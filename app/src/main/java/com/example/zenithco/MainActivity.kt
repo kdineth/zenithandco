@@ -42,35 +42,75 @@ class MainActivity : ComponentActivity() {
 fun ZenithApp() {
     val navController = rememberNavController()
     var isLoggedIn by remember { mutableStateOf(false) }
-    var screenState by remember { mutableStateOf("login") } // "login", "register", "forgot_password"
+    var showSplash by remember { mutableStateOf(true) }
 
-    if (!isLoggedIn) {
-        when (screenState) {
-            "login" -> LoginScreen(
-                onLogin = { isLoggedIn = true },
-                onNavigateToRegister = { screenState = "register" },
-                onForgotPassword = { screenState = "forgot_password" }
-            )
-            "register" -> RegisterScreen(
-                onRegister = { isLoggedIn = true },
-                onNavigateToLogin = { screenState = "login" }
-            )
-            "forgot_password" -> ForgetPasswordScreen(
-                onSubmit = { screenState = "login" },
-                onBackToLogin = { screenState = "login" }
-            )
-        }
-    } else {
-        ZenithNav(
-            navController = navController,
-            onLogout = {
-                isLoggedIn = false
-                screenState = "login"
+    if (showSplash) {
+        SplashScreen(
+            onSplashComplete = {
+                showSplash = false
             }
         )
+    } else {
+        NavHost(
+            navController = navController,
+            startDestination = if (isLoggedIn) "main" else "login"
+        ) {
+            composable("login") {
+                LoginScreen(
+                    onLogin = {
+                        isLoggedIn = true
+                        navController.navigate("main") {
+                            popUpTo("login") { inclusive = true }
+                        }
+                    },
+                    onNavigateToRegister = {
+                        navController.navigate("register")
+                    },
+                    onForgotPassword = {
+                        navController.navigate("forgot_password")
+                    }
+                )
+            }
+
+            composable("register") {
+                RegisterScreen(
+                    onRegister = {
+                        isLoggedIn = true
+                        navController.navigate("main") {
+                            popUpTo("register") { inclusive = true }
+                        }
+                    },
+                    onNavigateToLogin = {
+                        navController.popBackStack()
+                    }
+                )
+            }
+
+            composable("forgot_password") {
+                ForgetPasswordScreen(
+                    onSubmit = {
+                        navController.popBackStack()
+                    },
+                    onBackToLogin = {
+                        navController.popBackStack()
+                    }
+                )
+            }
+
+            composable("main") {
+                ZenithNav(
+                    navController = rememberNavController(),
+                    onLogout = {
+                        isLoggedIn = false
+                        navController.navigate("login") {
+                            popUpTo("main") { inclusive = true }
+                        }
+                    }
+                )
+            }
+        }
     }
 }
-
 
 @Composable
 fun ZenithNav(

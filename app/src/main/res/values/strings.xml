@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">zenithco</string>
+
+    <!-- Login/Register Screen -->
+    <string name="welcome">Welcome Back!</string>
+    <string name="createAccount">Create New Account</string>
+    <string name="login">Login</string>
+    <string name="register">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="enterEmail">Enter your email</string>
+    <string name="enterPassword">Enter your password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="fullName">Full Name</string>
+    <string name="enterFullName">Enter your full name</string>
+    <string name="register_link">Don\'t have an account? Sign Up</string>
+    <string name="login_link">Already have an account? Login</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="login_to_continue">Login to continue Shopping</string>
+    <string name="sign_up_to_continue">Sign up to continue</string>
+
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+
+    <!-- Home Screen -->
+    <string name="featured_jewelry">Featured Jewelry</string>
+    <string name="popular_items">Most Popular Items</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="see_all">See All</string>
+    <string name="search_jewelry">Search jewelry...</string>
+    <string name="welcome_message">Welcome!</string>
+    <string name="luxury_collection">Luxury Collection</string>
+    <string name="custom_designs">Custom Designs</string>
+
+    <!-- Categories Screen -->
+    <string name="browse_categories">Browse Categories</string>
+    <string name="rings">Rings</string>
+    <string name="necklaces">Necklaces</string>
+    <string name="bracelets">Bracelets</string>
+    <string name="earrings">Earrings</string>
+    <string name="engagement_rings">Engagement Rings</string>
+    <string name="wedding_bands">Wedding Bands</string>
+    <string name="pendants">Pendants</string>
+    <string name="custom_jewelry">Custom Jewelry</string>
+
+    <!-- Product Details -->
+    <string name="product_details">Product Details</string>
+    <string name="material">Material</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="add_to_wishlist">Add to Wishlist</string>
+    <string name="rating">Rating</string>
+    <string name="reviews">Reviews</string>
+    <string name="size">Size</string>
+    <string name="carat">Carat</string>
+    <string name="gemstone">Gemstone</string>
+
+    <!-- Cart Screen -->
+    <string name="your_cart">YOUR CART</string>
+    <string name="remove">remove</string>
+    <string name="order_now">Order Now</string>
+    <string name="total">Total</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+
+    <!-- Payment Screen -->
+    <string name="pay_now">Pay Now!</string>
+    <string name="name_on_card">Name on the card</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="expiry_date">EXPIRY DATE</string>
+    <string name="remember_my_information">Remember my Information</string>
+
+    <!-- Profile Screen -->
+    <string name="my_profile">My Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_orders">My Orders</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="settings">Settings</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="logout">Logout</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="premium_subscription">Premium Subscription</string>
+
+    <!-- Form Fields -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="phone">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="postal_code">Postal Code</string>
+
+    <!-- Common -->
+    <string name="loading">Loading...</string>
+    <string name="error">Error occurred</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_items">No items found</string>
+    <string name="currency_symbol">$</string>
+
+    <string name="diamond_ring_name">Diamond Ring</string>
+    <string name="diamond_ring_desc">A beautiful diamond ring for every occasion.</string>
+    <string name="emerald_pendant_name">Emerald Pendant</string>
+    <string name="emerald_pendant_desc">Stunning emerald pendant, handcrafted.</string>
+    <string name="gold_bracelet_name">Gold Bracelet</string>
+    <string name="gold_bracelet_desc">Classic gold bracelet for all ages.</string>
+    <string name="ruby_earrings_name">Ruby Earrings</string>
+    <string name="ruby_earrings_desc">Ruby studded earrings for elegance.</string>
+    <string name="sapphire_necklace_name">Sapphire Necklace</string>
+    <string name="sapphire_necklace_desc">Deep blue sapphire necklace.</string>
+    <string name="pearl_chain_name">Pearl Chain</string>
+    <string name="pearl_chain_desc">Elegant pearls for timeless beauty.</string>
+    <string name="classic_watch_name">Classic Watch</string>
+    <string name="classic_watch_desc">Luxury classic watch, gold plated.</string>
+    <string name="gemstone_brooch_name">Gemstone Brooch</string>
+    <string name="gemstone_brooch_desc">Unique gemstone brooch.</string>
+    <string name="platinum_cufflinks_name">Platinum Cufflinks</string>
+    <string name="platinum_cufflinks_desc">Premium platinum cufflinks.</string>
+    <string name="tennis_bracelet_name">Tennis Bracelet</string>
+    <string name="tennis_bracelet_desc">Tennis bracelet with diamonds.</string>
+</resources>
